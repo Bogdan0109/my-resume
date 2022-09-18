@@ -1,15 +1,23 @@
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #e5e5e5;
+  margin: 40px 0;
+}
+
+main {
+  width: 1150px;
+  height: 1399px;
   background-color: #f5f7fa;
+  padding: 40px;
+  margin: 0 auto;
 }
 
 .container {
   display: flex;
   flex-direction: row-reverse;
-  width: 1200px;
-  height: 1319px;
-  background-color: #fff;
-  margin: 40px auto;
+  width: 100%;
+  height: 100%;
+
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -34,7 +42,10 @@ h6 {
 /* Main content section */
 
 .main-content {
+  flex-grow: 1;
   padding: 100px 90px;
+
+  background-color: #fff;
 }
 
 .my-projects__title {
@@ -51,7 +62,9 @@ h6 {
 }
 
 .my-education__title,
-.my-education__text {
+.my-education__text,
+.my-courses__title,
+.my-courses__text {
   margin-bottom: 12px;
 }
 
@@ -67,7 +80,7 @@ h6 {
   font-size: 14px;
   line-height: 17px;
   color: #000;
-  margin-bottom: 0 0 20px 0;
+  margin-bottom: 20px;
 }
 
 .about-me__name {
@@ -76,11 +89,11 @@ h6 {
   font-size: 45px;
   line-height: 55px;
   color: #000;
-  margin-bottom: 0 0 25px 0;
+  margin-bottom: 25px;
 }
 
 .about-me__description {
-  width: 400px;
+  width: 550px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -110,6 +123,13 @@ h6 {
   font-size: 14px;
   line-height: 24px;
   color: #595959;
+
+  transition: color 200ms;
+}
+
+.my-projects__link:hover,
+.my-projects__link:focus {
+  color: #fb6d3a;
 }
 
 .my-projects__point {
@@ -158,7 +178,6 @@ h6 {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  margin: 0 0 10px 0;
   color: #a8a8a8;
 }
 
@@ -179,14 +198,15 @@ h6 {
 }
 
 .my-work-experience {
+  margin-bottom: 30px;
 }
 
 .main-content__title {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
-.my-work-experience__company-block {
-  margin: 0 15px 0 0;
+.my-work-experience__company-block:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .my-education__item:not(:last-child) {
@@ -194,9 +214,8 @@ h6 {
 }
 
 .my-education {
-  padding: 30px 0;
+  margin-bottom: 30px;
 }
-
 /* Saidebar section */
 
 .saidebar {
@@ -240,6 +259,13 @@ h6 {
   font-size: 14px;
   line-height: 24px;
   color: #878d96;
+
+  transition: color 200ms;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: #abb3c0;
 }
 
 .tech-skills__list,
