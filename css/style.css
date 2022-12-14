@@ -1,5 +1,5 @@
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #e5e5e5;
   margin: 40px 0;
 }
@@ -21,16 +21,14 @@ main {
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -153,6 +151,11 @@ h6 {
   color: #000;
 }
 
+.my-projects__text-list {
+  padding-left: 10px;
+  list-style: none;
+}
+
 /* My work experience */
 
 .my-work-experience__company {
@@ -226,13 +229,15 @@ h6 {
 
 .contacts,
 .tech-skills,
-.soft-skills {
+.soft-skills,
+.languages {
   margin: 50px 0 0 40px;
 }
 
 .contacts__title,
 .tech-skills__title,
-.soft-skills__title {
+.soft-skills__title,
+.languages__title {
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -243,13 +248,23 @@ h6 {
 
 /* Contacts section */
 
-.contacts__type {
+.contacts__thumb {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* .contacts__type {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
   color: #fff;
   margin-right: 7px;
+} */
+
+.contacts__icon {
+  fill: white;
 }
 
 .contacts__link {
@@ -269,17 +284,20 @@ h6 {
 }
 
 .tech-skills__list,
-.soft-skills__list {
+.soft-skills__list,
+.languages__list {
   padding: 0 0 0 20px;
 }
 
 .tech-skills__item,
-.soft-skills__item {
+.soft-skills__item,
+.languages__item {
   color: #fb6d3a;
 }
 
 .tech-skills__item-text,
-.soft-skills__item-text {
+.soft-skills__item-text,
+.languages__item-text {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
