@@ -5,10 +5,8 @@ body {
 }
 
 main {
-  /* width: 1150px; */
-  /* height: 1399px; */
-  width: 210mm;
-  height: 297mm;
+  width: 1150px;
+  height: 1399px;
   /* background-color: #f5f7fa;
   padding: 40px; */
   margin: 0 auto;
