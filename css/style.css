@@ -7,8 +7,8 @@ body {
 main {
   width: 1150px;
   height: 1399px;
-  background-color: #f5f7fa;
-  padding: 40px;
+  /* background-color: #f5f7fa;
+  padding: 40px; */
   margin: 0 auto;
 }
 
@@ -46,7 +46,10 @@ ul {
   background-color: #fff;
 }
 
-.my-projects__title {
+.my-summary__title,
+.my-projects__title,
+.my-education__title,
+.my-courses__title {
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -59,10 +62,23 @@ ul {
   margin: 0 0 10px 0;
 }
 
-.my-education__title,
+/* .my-education__title,
+.my-courses__title {
+  font-size: 22px;
+  margin-bottom: 12px;
+} */
+
+.my-education__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  list-style: none;
+}
+
 .my-education__text,
-.my-courses__title,
 .my-courses__text {
+  font-size: 14px;
   margin-bottom: 12px;
 }
 
@@ -89,8 +105,11 @@ ul {
   color: #000;
   margin-bottom: 25px;
 }
+.my-summary {
+  margin: 0 0 50px 0;
+}
 
-.about-me__description {
+.my-summary__description {
   width: 550px;
   font-style: normal;
   font-weight: normal;
@@ -141,6 +160,10 @@ ul {
   line-height: 24px;
   color: #595959;
   margin: 0 0 0 5px;
+}
+
+.my-projects__text li {
+  width: 550px;
 }
 
 .my-projects__bracket {
@@ -205,6 +228,7 @@ ul {
 }
 
 .main-content__title {
+  font-size: 22px;
   margin-bottom: 15px;
 }
 
@@ -212,9 +236,9 @@ ul {
   margin-bottom: 20px;
 }
 
-.my-education__item:not(:last-child) {
+/* .my-education__item:not(:last-child) {
   margin-bottom: 25px;
-}
+} */
 
 .my-education {
   margin-bottom: 30px;
