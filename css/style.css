@@ -1,7 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  /* background-color: #e5e5e5;
-  margin: 40px 0; */
+  /* background-color: #e5e5e5; */
+  margin: 0;
 }
 
 main {
@@ -9,7 +9,7 @@ main {
   height: 1399px;
   /* background-color: #f5f7fa;
   padding: 40px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .container {
