@@ -2,14 +2,13 @@ html,
 body {
   font-family: 'Montserrat', sans-serif;
   /* background-color: #e5e5e5; */
-  display: inline-flex;
-  width: 1150px;
+  width: 1050px;
   height: 1350px;
   margin: 0;
 }
 
 main {
-  width: 1150px;
+  width: 1050px;
   height: 1350px;
 }
 /* background-color: #f5f7fa;
@@ -45,7 +44,8 @@ ul {
 
 .main-content {
   flex-grow: 1;
-  padding: 100px 90px;
+  padding: 100px 0;
+  padding-left: 90px;
 
   background-color: #fff;
 }
